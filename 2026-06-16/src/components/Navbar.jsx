@@ -87,7 +87,7 @@ function Navbar() {
                 href="tel:+573001234567"
                 onClick={cerrarMenu}
               >
-                📞 mandanos un mensaje ahora
+                 mandanos un mensaje ahora
               </a>
             </li>
           </ul>

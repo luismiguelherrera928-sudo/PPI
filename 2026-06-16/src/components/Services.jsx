@@ -5,7 +5,7 @@
 const servicios = [
   {
     icono: '⚡',
-    titulo: 'Instalaciones residenciales',
+    titulo: '',
     descripcion: 'Montamos y actualizamos instalaciones eléctricas seguras y eficientes para tu hogar.',
   },
   {
@@ -16,7 +16,7 @@ const servicios = [
   {
     icono: '🎨',
     titulo: 'Diseño gráfico',
-    descripcion: 'Desarrollamos identidades visuales, piezas publicitarias y materiales de marca impactantes.',
+    descripcion: '.',
   },
   {
     icono: '📈',

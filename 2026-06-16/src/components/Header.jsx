@@ -8,10 +8,10 @@
 // ============================================================
 
 const estadisticas = [
-  { numero: '15+', etiqueta: 'Años de experiencia' },
-  { numero: '3.200', etiqueta: 'Proyectos completados' },
-  { numero: '98%', etiqueta: 'Clientes satisfechos' },
-  { numero: '24/7', etiqueta: 'Soporte disponible' },
+  { numero: 'te damos', etiqueta: 'actualizacion constante' },
+  { numero: 'muchas', etiqueta: 'personas satisfechas' },
+  { numero: '60%', etiqueta: 'de ganancias' },
+  
 ];
 
 function Header() {
