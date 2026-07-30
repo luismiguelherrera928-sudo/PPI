@@ -18,9 +18,9 @@ const serviciosFooter = [
 
 const linksRapidos = [
   { label: 'Inicio', href: '#inicio' },
-  { label: 'Servicios', href: '#servicios' },
-  { label: 'Nosotros', href: '#nosotros' },
-  { label: 'Contacto', href: '#contacto' },
+  { label: 'vendedores', href: '#vendedores' },
+  { label: 'comentarios', href: '#comentarios' },
+  { label: 'producto', href: '#producto' },
 ];
 
 function Footer() {
@@ -34,10 +34,10 @@ function Footer() {
           {/* Columna 1: Logo y descripción */}
           <div className="col-lg-4 col-md-6">
             <div className="d-flex align-items-center gap-2 mb-3">
-              <span className="logo-icono">⚡</span>
+              <span className="logo-icono">💰</span>
               <span className="logo-texto">
-                <span className="logo-principal">VOLT</span>
-                <span className="logo-secundario text-warning">TEC</span>
+                <span className="logo-principal">Bitcoin</span>
+                <span className="logo-secundario text-warning">gard</span>
               </span>
             </div>
             <p className="text-light opacity-75 mb-3">

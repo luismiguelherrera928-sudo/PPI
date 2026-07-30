@@ -50,10 +50,10 @@ function Navbar() {
     >
       <div className="container">
         <a className="navbar-brand d-flex align-items-center gap-2" href="#inicio">
-          <span className="logo-icono">⚡</span>
+          <span className="logo-icono">💰</span>
           <span className="logo-texto">
-            <span className="logo-principal">VOLT</span>
-            <span className="logo-secundario">TEC</span>
+            <span className="logo-principal">Bitcoin</span>
+            <span className="logo-secundario">Gard</span>
           </span>
         </a>
 
