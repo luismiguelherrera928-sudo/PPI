@@ -1,50 +1,60 @@
-// ============================================================
-//  🛠️ COMPONENTE PARA COMPLETAR — TAREA ESTUDIANTE
-//  Services.jsx
-//
-//  INSTRUCCIONES:
-//  1. Define el array "servicios" con al menos 6 servicios.
-//     Cada objeto debe tener: icono, titulo, descripcion.
-//  2. Completa el JSX usando tarjetas Bootstrap (card).
-//  3. Usa .map() para renderizar — NO copies el HTML 6 veces.
-//
-//  PISTAS:
-//  - Usa <div className="row g-4"> para el grid
-//  - Cada tarjeta va en <div className="col-md-6 col-lg-4">
-//  - Clases Bootstrap útiles: card, card-body, card-title, card-text
-// ============================================================
-
-// 🛠️ PASO 1: Define aquí tu array de servicios
 const servicios = [
-  // Ejemplo de la estructura:
-  // {
-  //   icono: '⚡',
-  //   titulo: 'Instalaciones residenciales',
-  //   descripcion: 'Instalamos sistemas eléctricos completos...',
-  // },
-
-  // TODO: Agrega aquí tus 6 servicios
+  {
+    icono: '⚡',
+    titulo: 'Instalaciones residenciales',
+    descripcion: 'Diseño y montaje de sistemas eléctricos seguros para hogares, apartamentos y proyectos nuevos.',
+  },
+  {
+    icono: '🏢',
+    titulo: 'Instalaciones comerciales',
+    descripcion: 'Soluciones para oficinas, locales, centros comerciales y espacios con alto consumo eléctrico.',
+  },
+  {
+    icono: '🛠️',
+    titulo: 'Mantenimiento preventivo',
+    descripcion: 'Inspecciones periódicas para prevenir fallas, garantizar continuidad y extender la vida útil.',
+  },
+  {
+    icono: '🔌',
+    titulo: 'Tableros y distribución',
+    descripcion: 'Montaje y actualización de tableros, protecciones y sistemas de distribución eficientes.',
+  },
+  {
+    icono: '💡',
+    titulo: 'Iluminación LED',
+    descripcion: 'Implementación de iluminación eficiente, moderna y con ahorro energético comprobable.',
+  },
+  {
+    icono: '🔋',
+    titulo: 'Plantas eléctricas',
+    descripcion: 'Instalación y mantenimiento de plantas para respaldo y continuidad operativa.',
+  },
 ];
 
 function Services() {
   return (
     <section id="servicios" className="py-5 bg-light">
       <div className="container">
-
         <div className="text-center mb-5">
           <h2 className="section-titulo">Nuestros Servicios</h2>
           <p className="section-subtitulo text-muted">
-            {/* 🛠️ TODO: Escribe una descripción corta de la sección */}
+            Soluciones eléctricas completas, seguras y adaptadas a cada necesidad del cliente.
           </p>
         </div>
 
-        {/* 🛠️ PASO 2: Renderiza las tarjetas con servicios.map(...) */}
         <div className="row g-4">
-
-          {/* TODO: Tu código .map() va aquí */}
-
+          {servicios.map((servicio) => (
+            <div key={servicio.titulo} className="col-md-6 col-lg-4">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body">
+                  <div className="fs-1 mb-3">{servicio.icono}</div>
+                  <h5 className="card-title fw-bold">{servicio.titulo}</h5>
+                  <p className="card-text text-muted">{servicio.descripcion}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-
       </div>
     </section>
   );

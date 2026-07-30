@@ -4,26 +4,17 @@ import Services from './components/Services';
 import WhyUs from './components/WhyUs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Construction from './components/Construction';
 
 function App() {
   return (
     <>
-      {/* ✅ ENTREGADO: Navbar con menú de navegación */}
       <Navbar />
-
-      {/* ✅ ENTREGADO: Header / Jumbotron principal */}
       <Header />
-
-      {/* 🛠️ TAREA: Sección de servicios - ustedes deben completar el HTML interno */}
       <Services />
-
-      {/* 🛠️ TAREA: Sección ¿Por qué nosotros? */}
       <WhyUs />
-
-      {/* 🛠️ TAREA: Formulario de contacto */}
+      <Construction />
       <Contact />
-
-      {/* ✅ ENTREGADO: Footer */}
       <Footer />
     </>
   );

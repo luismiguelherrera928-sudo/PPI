@@ -1,25 +1,8 @@
-// ============================================================
-//  🛠️ COMPONENTE PARA COMPLETAR — TAREA ESTUDIANTE
-//  WhyUs.jsx  (¿Por qué elegirnos?)
-//
-//  INSTRUCCIONES:
-//  1. Define el array "razones" con al menos 4 objetos.
-//     Cada objeto debe tener: icono, titulo, descripcion.
-//  2. Agrega una imagen en la columna izquierda.
-//  3. Escribe 2 párrafos sobre la empresa.
-//  4. Usa .map() para renderizar la lista de razones.
-//
-//  PISTAS:
-//  - <div className="row align-items-center"> para las columnas
-//  - className="list-unstyled" en <ul> quita los bullets
-//  - Placeholder: https://placehold.co/500x400/1a1e2e/f5c518?text=VoltTec
-// ============================================================
-
-// 🛠️ PASO 1: Define tu array de razones
 const razones = [
-  // TODO: Agrega aquí tus razones
-  // Ejemplo:
-  // { icono: '🏆', titulo: 'Experiencia certificada', descripcion: '...' },
+  { icono: '🏆', titulo: 'Experiencia certificada', descripcion: 'Más de 15 años ejecutando proyectos eléctricos con altos estándares de calidad.' },
+  { icono: '🧠', titulo: 'Enfoque técnico', descripcion: 'Analizamos cada necesidad para proponer soluciones eficientes y seguras.' },
+  { icono: '🤝', titulo: 'Atención cercana', descripcion: 'Brindamos acompañamiento personalizado desde la cotización hasta la ejecución.' },
+  { icono: '⚙️', titulo: 'Innovación constante', descripcion: 'Implementamos tecnologías modernas para mejorar el rendimiento y el ahorro energético.' },
 ];
 
 function WhyUs() {
@@ -27,27 +10,35 @@ function WhyUs() {
     <section id="nosotros" className="py-5">
       <div className="container">
         <div className="row align-items-center g-5">
-
-          {/* Columna izquierda: imagen */}
           <div className="col-lg-5">
-            {/* 🛠️ TODO: Agrega <img> con className="img-fluid rounded shadow" */}
+            <img
+              src="https://placehold.co/500x400/1a1e2e/f5c518?text=VoltTec"
+              alt="VoltTec"
+              className="img-fluid rounded shadow"
+            />
           </div>
 
-          {/* Columna derecha: texto y razones */}
           <div className="col-lg-7">
             <h2 className="section-titulo mb-3">¿Por qué elegirnos?</h2>
-
-            {/* 🛠️ TODO: Escribe 2-3 párrafos sobre la empresa */}
             <p className="text-muted mb-4">
-              {/* Tu texto aquí */}
+              VoltTec es una empresa dedicada a ofrecer soluciones eléctricas seguras, eficientes y confiables para hogares y negocios.
+            </p>
+            <p className="text-muted mb-4">
+              Nuestro equipo combina experiencia técnica, cumplimiento normativo y un alto compromiso con la satisfacción del cliente.
             </p>
 
-            {/* 🛠️ PASO 2: Renderiza las razones con .map() */}
             <ul className="list-unstyled">
-              {/* TODO: razones.map(...) */}
+              {razones.map((razon) => (
+                <li key={razon.titulo} className="d-flex gap-3 mb-3">
+                  <div className="fs-4">{razon.icono}</div>
+                  <div>
+                    <h6 className="fw-bold mb-1">{razon.titulo}</h6>
+                    <p className="text-muted mb-0">{razon.descripcion}</p>
+                  </div>
+                </li>
+              ))}
             </ul>
           </div>
-
         </div>
       </div>
     </section>
